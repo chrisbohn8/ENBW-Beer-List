@@ -1,0 +1,304 @@
+body {
+    background-color: #f4efe6;
+    height: 100%;
+    position: fixed;
+}
+
+/* Fonts */
+
+.beer-name {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    color: #233746;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.beer-tagline {
+    font-family: Roboto;
+    color: #6e757b;
+    font-size: 25px;
+}
+
+.abv-text, 
+.beer-tier-text {
+    font-family: Roboto;
+    color: #d2b887;
+    font-size: 20px;
+}
+
+.abv-content,
+.beer-tier-content {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    text-align: center;
+    color: #233746;
+    font-size: 25px;
+
+}
+
+.guest-name {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    color: #233746;
+}
+
+.guest-price {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    color: #233746;
+}
+
+.tier-main-name {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    font-size: 30px;
+    color: #6e757b;
+}
+
+.tier-name {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #988561;
+}
+
+.tier-content {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    font-size: 25px;
+    color: #233746;
+    text-align: center;
+}
+
+
+
+
+
+/* Layout */
+
+a:link {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%
+}
+
+#beer-list {
+	display: block;
+	margin: 0 auto;
+    width: 50%;
+    height: 7.125rem;
+}
+
+#white-container {
+    background-color: #ffffff;
+    margin: -3.75rem auto;
+    width: 92%;
+    height: 80%;
+    box-shadow: 0 11px 34px 0 rgba(151,145,135,0.16);
+}
+
+#beers {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.beer {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.beer:hover .beer-name{
+	color: #18bfef;
+	cursor: pointer;
+}
+
+.beer:nth-child(-n+2){
+	margin-top: 3.75rem;
+}
+
+.beer-logo {
+	height: 86px;
+	width: 86px;
+	margin-top:-1rem;
+	padding-bottom: 1rem;
+}
+
+.enbw-logo {	
+	height: 55px;
+	width: 55px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 31px;
+}
+
+.logo-and-text {
+	display: flex;
+	flex-direction: row;
+}
+
+.abv-and-tier {
+	display: flex;
+	flex-direction: row;
+}
+
+.beer-abv,
+.beer-tier {
+	padding-right: 2rem;
+}
+
+#wine-cider {
+	width: 40%
+}
+
+#wine-cider-list {
+	display: flex;
+}
+
+.guest-total {
+	display: flex;
+	flex-direction: row;
+	padding-right: 2rem;
+	justify-content: space-between;
+}
+
+.beer:last-child {
+	margin-bottom: 1.75rem;
+}
+
+.tier-pricing {
+	display: flex;
+	cursor: default;
+	margin: 80px auto;
+	width: 92%;
+}
+
+.tier {
+	display: flex;
+	margin: 0 auto;
+    width: 50%;
+    height: 7.125rem;
+    justify-content: space-around;
+}
+
+/* Modals */
+
+.modal{
+	display:none;
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+	background-color: #f4f4f4;
+	margin: 20% auto;
+	padding: 20px;
+	width: 70%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.closeBtn{
+	color: #ccc;
+	float: right;
+	font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-heading,
+.modal-subheading,
+.modal-footer {
+	text-align: center;
+}
+
+.modal-heading,
+.modal-subheading,
+.modal-paragraph {
+	font-family: RobotoSlab;
+    font-weight: bold;
+    color: #233746;
+}
+
+.modal-heading {
+	margin-bottom: -25px;
+}
+
+.modal-paragraph{
+	text-align: justify;
+}
+
+.modal-footer {
+	font-family: Roboto;
+    color: #6e757b;
+}
+
+.modal-logo {
+	height: 172px;
+	width: 172px;
+	display: block;
+	margin: 0 auto;
+    width: 50%;
+}
+
+@media only screen and (max-width: 999px) {
+
+	body {
+		position: static;
+	}
+
+    #beers {
+    	flex-direction: column;
+    }
+
+    .beer {
+	width: 100%;
+	}
+
+	.beer:nth-child(2){
+		margin-top: 0;
+	}
+
+	.tier-pricing {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.tier {
+		width: 100%;
+	}
+	
+	#wine-cider {
+		padding-left: 15px;
+	}
+
+	#white-container {
+		width:100%;
+		height: auto;
+	}
+
+	#tier-2 {
+		border-top: solid 2px #6e757b;
+		padding-top: 2rem;
+		margin-top: -3rem;
+	}
+
+}
+
+@media only screen and (min-width: 1000px) {
+	#beers {
+		align-content: space-between;
+		height: 100%;
+	}
+}

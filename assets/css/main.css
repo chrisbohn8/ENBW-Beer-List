@@ -289,7 +289,12 @@ a:link {
 		font-size: 8pt;
 	}
 
+	.tier-name {
+		font-size: 8pt;
+	}
+
 }
+
 
 @media only screen and (max-width: 999px) {
 

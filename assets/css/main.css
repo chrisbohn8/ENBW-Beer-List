@@ -268,12 +268,19 @@ a:link {
 	}
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1450px) {
 
 	html {
 		font-size: 11pt;
 	}
 
+}
+
+@media screen and (max-width: 800px) {
+
+	html {
+		font-size: 9.5pt;
+	}
 }
 
 @media screen and (max-width: 450px) {

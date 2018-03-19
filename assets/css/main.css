@@ -110,9 +110,12 @@ a:link {
 	width: 50%;
 }
 
-.beer:hover .beer-name{
-	color: #18bfef;
+.beer:hover {
 	cursor: pointer;
+}
+
+.beer:hover .beer-name {
+	color: #18bfef;
 }
 
 .beer:nth-child(-n+2){

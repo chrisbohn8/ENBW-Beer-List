@@ -305,6 +305,12 @@ function outsideClickWhm(e){
 }
 
 //Get #beers
-var length = document.getElementById('beers').childElementCount;
+var beerLength = document.getElementById('beers').childElementCount;
+//Get white container
+var html = document.getElementById('html');
 //Log beers length
-console.log(length)
+console.log(beerLength)
+
+if (beerLength > 12) {
+	html.style.fontSize = "12pt";
+}

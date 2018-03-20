@@ -119,10 +119,6 @@ a:link {
 	margin-top: 3.75rem;
 }
 
-.beer:last-child {
-	cursor: auto;
-}
-
 .beer-logo {
 	height: 5.375rem;
 	width: 5.375rem;
@@ -172,6 +168,8 @@ a:link {
 
 .beer:last-child {
 	margin-bottom: 1.75rem;
+	margin-left: auto;
+	cursor: auto;
 }
 
 .tier-pricing {

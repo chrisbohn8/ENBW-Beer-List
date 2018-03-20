@@ -1,6 +1,6 @@
 //Miro Modal
 // Get close button
-var closeBtnMiro = document.getElementsByClassName('closeBtn')[0];
+var closeBtnMiro = document.getElementById('closeBtnMiro');
 // Get modal element
 var miroModal = document.getElementById('miroModal');
 //Get open modal button
@@ -28,7 +28,7 @@ function outsideClickMiro(e){
 
 //Cumberland Punch Modal
 // Get close button
-var closeBtnCp = document.getElementsByClassName('closeBtn')[1];
+var closeBtnCp = document.getElementById('closeBtnCp');
 // Get modal element
 var cpModal = document.getElementById('cpModal');
 //Listen for open click
@@ -54,7 +54,7 @@ function outsideClickCp(e){
 
 //Young Hickory Modal
 // Get close button
-var closeBtnYh = document.getElementsByClassName('closeBtn')[2];
+var closeBtnYh = document.getElementById('closeBtnYh');
 // Get modal element
 var yhModal = document.getElementById('yhModal');
 //Get open modal button
@@ -82,7 +82,7 @@ function outsideClickYh(e){
 
 //Roaming Dog Modal
 // Get close button
-var closeBtnRd = document.getElementsByClassName('closeBtn')[3];
+var closeBtnRd = document.getElementById('closeBtnRd');
 // Get modal element
 var rdModal = document.getElementById('rdModal');
 //Get open modal button
@@ -110,7 +110,7 @@ function outsideClickRd(e){
 
 //Swing Bridge Modal
 // Get close button
-var closeBtnSb = document.getElementsByClassName('closeBtn')[4];
+var closeBtnSb = document.getElementById('closeBtnSb');
 // Get modal element
 var sbModal = document.getElementById('sbModal');
 //Get open modal button
@@ -138,7 +138,7 @@ function outsideClickSb(e){
 
 //East Bank Modal
 // Get close button
-var closeBtnEb = document.getElementsByClassName('closeBtn')[5];
+var closeBtnEb = document.getElementById('closeBtnEb');
 // Get modal element
 var ebModal = document.getElementById('ebModal');
 //Get open modal button
@@ -166,7 +166,7 @@ function outsideClickEb(e){
 
 //Holla Blanc Modal
 // Get close button
-var closeBtnHb = document.getElementsByClassName('closeBtn')[6];
+var closeBtnHb = document.getElementById('closeBtnHb');
 // Get modal element
 var hbModal = document.getElementById('hbModal');
 //Get open modal button
@@ -194,7 +194,7 @@ function outsideClickHb(e){
 
 //The Grievance Modal
 // Get close button
-var closeBtnTg = document.getElementsByClassName('closeBtn')[7];
+var closeBtnTg = document.getElementById('closeBtnTg');
 // Get modal element
 var tgModal = document.getElementById('tgModal');
 //Get open modal button
@@ -222,7 +222,7 @@ function outsideClickTg(e){
 
 //Talbot's Corner Modal
 // Get close button
-var closeBtnTc = document.getElementsByClassName('closeBtn')[8];
+var closeBtnTc = document.getElementById('closeBtnTc');
 // Get modal element
 var tcModal = document.getElementById('tcModal');
 //Get open modal button
@@ -250,7 +250,7 @@ function outsideClickTc(e){
 
 //Fire of the Century Modal
 // Get close button
-var closeBtnFc = document.getElementsByClassName('closeBtn')[9];
+var closeBtnFc = document.getElementById('closeBtnFc');
 // Get modal element
 var fcModal = document.getElementById('fcModal');
 //Get open modal button
@@ -278,7 +278,7 @@ function outsideClickFc(e){
 
 //Woodland Hull Melon Modal
 // Get close button
-var closeBtnWhm = document.getElementsByClassName('closeBtn')[10];
+var closeBtnWhm = document.getElementById('closeBtnWhm');
 // Get modal element
 var whmModal = document.getElementById('whmModal');
 //Get open modal button
@@ -303,3 +303,8 @@ function outsideClickWhm(e){
 		whmModal.style.display = 'none';
 	}
 }
+
+//Get #beers
+var length = document.getElementById('beers').childElementCount;
+//Log beers length
+console.log(length)

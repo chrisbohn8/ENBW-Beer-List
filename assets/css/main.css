@@ -59,6 +59,7 @@ body {
 .tier-name {
     font-family: Roboto;
     color: #988561;
+    text-align: center;
 }
 
 .tier-content {
@@ -159,6 +160,7 @@ a:link {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	margin-left: auto;
 }
 
 .guest-total {

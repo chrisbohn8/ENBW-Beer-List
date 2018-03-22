@@ -160,7 +160,6 @@ a:link {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	margin-left: auto;
 }
 
 .guest-total {
@@ -168,6 +167,7 @@ a:link {
 	flex-direction: row;
 	padding-right: 2rem;
 	justify-content: right;
+	margin-left: auto;
 }
 
 .beer:last-child {

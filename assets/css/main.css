@@ -152,7 +152,7 @@ a:link {
 	padding-right: 2rem;
 }
 
-#wine-cider {
+#wine-cider-img {
 	width: 40%
 }
 
@@ -321,7 +321,7 @@ a:link {
 		width: 100%;
 	}
 	
-	#wine-cider {
+	#wine-cider-img {
 		padding-left: 0.9375rem;
 	}
 
@@ -347,11 +347,56 @@ a:link {
 
 @media only screen and (min-width: 1250px) and (min-height: 900px){
 	body {
-		position: fixed;
+		/*position: fixed;*/
 	}
 	#white-container {
 		height: 80%;
 	}
 }
 
+@media (device-width: 100vw) and (device-height: 100vh) {
+	html {
+    	font-size: 16.5pt;
+	}
+	body {
+		position: fixed;
+	}
+	#white-container {
+    background-color: #ffffff;
+    margin: -3.75rem auto;
+    height: 82%;
+    width: 97%;
+    box-shadow: 0 0.6875rem 32.125rem 0 rgba(151,145,135,0.16);
+	}
+	.beer-logo {
+    height: 6.71875rem;
+    width: 6.71875rem;
+    margin-top: -1rem;
+    padding-bottom: 0;
+	}
+	.enbw-logo {
+    height: 5.546875rem;
+    width: 4.374375rem;
+    padding-right: 0.9375rem;
+    padding-left: 1.25rem;
+    padding-bottom: 0;
+	}
+	.beer:nth-child(2n) {
+    border-left: solid 2px #ede5d7;
+    margin-left: -12px;
+    padding-left: 6px;
+	}
+	#wine-cider-img {
+		display: none;
+	}
 
+	#wine-cider-list {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+	#wine-cider {
+		justify-content: center;
+	}
+}
